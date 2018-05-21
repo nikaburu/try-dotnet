@@ -1,6 +1,6 @@
 using System;
 
-namespace Try.Dotnet.Roslyn.Source
+namespace Try.Dotnet.Roslyn.Sources
 {
     public class AuditLogger
     {

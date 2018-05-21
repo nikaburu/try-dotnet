@@ -1,6 +1,6 @@
 using System.ServiceModel;
 
-namespace Try.Dotnet.Roslyn.Source
+namespace Try.Dotnet.Roslyn.Sources
 {
     /// <summary>
     /// Property services contract

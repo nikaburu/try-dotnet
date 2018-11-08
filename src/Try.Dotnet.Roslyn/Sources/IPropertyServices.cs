@@ -1,4 +1,4 @@
-using System.ServiceModel;
+using Try.Dotnet.Roslyn.Sources.Attributes;
 
 namespace Try.Dotnet.Roslyn.Sources
 {
@@ -9,19 +9,15 @@ namespace Try.Dotnet.Roslyn.Sources
     public interface IPropertyServices
     {
         [OperationContract]
-        [FaultContract(typeof(ServiceFault))]
         Property GetProperty(Credentials credentials, int id);
 
         [OperationContract]
-        [FaultContract(typeof(ServiceFault))]
         void AddProperty(Credentials credentials, Property property);
 
         [OperationContract]
-        [FaultContract(typeof(ServiceFault))]
         void UpdateProperty(Credentials credentials, Property property);
 
         [OperationContract]
-        [FaultContract(typeof(ServiceFault))]
         void DeleteProperty(Credentials credentials, int id);
     }
 }

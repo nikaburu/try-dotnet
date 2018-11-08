@@ -1,6 +1,5 @@
 using System;
 using System.Security.Authentication;
-using System.ServiceModel;
 
 namespace Try.Dotnet.Roslyn.Sources
 {
@@ -19,8 +18,7 @@ namespace Try.Dotnet.Roslyn.Sources
 
         private Exception WrapException(Exception exception)
         {
-            ServiceFault fault = new ServiceFault { Message = exception.Message };
-            return new FaultException<ServiceFault>(fault);  
+            return new Exception(exception.Message);
         }
 
         #endregion
